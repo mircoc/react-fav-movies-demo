@@ -32,9 +32,25 @@ const router = createBrowserRouter([
             path: "favorite",
             element: <FavoritesScreen />,
           },
+          process.env.REACT_APP_REDIRECT_PROD_BASE ? {
+            path: "/react-fav-movies-demo",
+            element: <Loading />,
+            loader: async () => {
+                return redirect("/movie");
+              }
+          } : {
+            // actually not needed
+            path: "/loading",
+            element: <Loading />,
+            loader: async () => {
+                return redirect("/movie");
+              }
+          },
       ],
   }
-]);
+], {
+  basename: process.env.REACT_APP_BASEURL
+});
 
 export function Navigator() {
   return <RouterProvider router={router} />;
