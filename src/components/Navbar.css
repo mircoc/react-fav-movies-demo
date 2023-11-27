@@ -1,0 +1,4 @@
+.navbar-nav.favmovie-navbar .active {
+    color: rgb(239, 201, 77);
+    font-weight: bold;
+}
