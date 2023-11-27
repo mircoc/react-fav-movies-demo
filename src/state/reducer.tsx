@@ -28,7 +28,7 @@ export const favMovieReducer = (state: FavMovieState, action: FavMovieAction): F
                         },
                         state.movies.data
                     ),
-                    dataOrder: [ ...state.movies.dataOrder, ...action.payload.data.map(movie => movie.id)],
+                    dataOrder: [ ...state.movies.dataOrder, ...action.payload.data.filter(movie => state.movies.dataOrder.indexOf(movie.id) === -1).map(movie => movie.id)],
                     lastPageLoaded: action.payload.page,
                     morePagesAvailable: action.payload.morePages,
                 }
