@@ -1,0 +1,26 @@
+.movie-detail svg {
+    height: 10px;
+}
+
+.movie-detail strong {
+    color: gray;
+    font-size: x-small;
+}
+
+.movie-detail .vote {
+    padding-right: 0.5em;
+}
+
+
+.movie-overview-text {
+    font-size: small;
+    padding: 1em 0;
+}
+
+.movie-detail button {
+    border-radius: 2em;
+    padding: 0.4em 1.5em;
+    font-size: small;
+    color: white;
+    font-weight: bold;
+}

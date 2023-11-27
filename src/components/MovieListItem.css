@@ -1,0 +1,30 @@
+.movie-list-item {
+  border: 0;
+  text-decoration: none;
+}
+
+.movie-list-item img {
+  border-radius: 10px;
+}
+
+.movie-list-item .overlay {
+  opacity: 0%;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  margin: 0 5px;
+  font-size: small;
+}
+
+.movie-list-item:hover .overlay {
+  opacity: 100%;
+  
+}
+
+.movie-list-item .overlay .rate .bi {
+  color: rgb(239, 201, 77);
+  margin-top: -4px;
+}
+
+.movie-list-item .title {
+  font-size: small;
+}
